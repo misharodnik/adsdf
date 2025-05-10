@@ -410,26 +410,11 @@ Aiku.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.PlayerStats.Style.Value = "Aiku"
 end)
 
-Rin.Name = "Rin"
-Rin.Parent = scrgui
-Rin.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
-Rin.Position = UDim2.new(0.1, 0, 0.61, 0)
-Rin.Size = UDim2.new(0, 97, 0, 25)
-Rin.Font = Enum.Font.Gotham
-Rin.Text = "Rin"
-Rin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Rin.TextScaled = true
-Rin.TextSize = 14.000
-Rin.TextWrapped = true
-Rin.MouseButton1Down:connect(function()
-	game.Players.LocalPlayer.PlayerStats.Style.Value = "Rin"
-end)
-
 WorldClass.Name = "WORLD CLASS"
 WorldClass.Parent = scrgui
 WorldClass.BackgroundTransparency = 1
 WorldClass.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
-WorldClass.Position = UDim2.new(0.05, 0, 0.64, 0)
+WorldClass.Position = UDim2.new(0.05, 0, 0.61, 0)
 WorldClass.Size = UDim2.new(0, 97, 0, 25)
 WorldClass.Font = Enum.Font.Gotham
 WorldClass.Text = "WORLD CLASS"
@@ -440,7 +425,7 @@ WorldClass.TextSize = 14.000
 WorldClass.TextWrapped = true
 WorldClassI.Name = "MythicI"
 WorldClassI.Parent = scrgui
-WorldClassI.Position = UDim2.new(0.05, 0, 0.64, 0)
+WorldClassI.Position = UDim2.new(0.05, 0, 0.61, 0)
 WorldClassI.Size = UDim2.new(0, 97, 0, 25)
 WorldClassI.Image = "rbxassetid://139736919389363"
 WorldClassI.ImageColor3 = Color3.fromRGB(255, 255, 255)
@@ -448,7 +433,7 @@ WorldClassI.ImageColor3 = Color3.fromRGB(255, 255, 255)
 Sae.Name = "Sae"
 Sae.Parent = scrgui
 Sae.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
-Sae.Position = UDim2.new(0.1, 0, 0.67, 0)
+Sae.Position = UDim2.new(0.1, 0, 0.64, 0)
 Sae.Size = UDim2.new(0, 97, 0, 25)
 Sae.Font = Enum.Font.Gotham
 Sae.Text = "Sae"
@@ -463,7 +448,7 @@ end)
 NELIS.Name = "NEL ISAGI"
 NELIS.Parent = scrgui
 NELIS.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
-NELIS.Position = UDim2.new(0.1, 0, 0.70, 0)
+NELIS.Position = UDim2.new(0.1, 0, 0.67, 0)
 NELIS.Size = UDim2.new(0, 97, 0, 25)
 NELIS.Font = Enum.Font.Gotham
 NELIS.Text = "NEL Isagi"
@@ -478,7 +463,7 @@ end)
 Kaiser.Name = "Kaiser"
 Kaiser.Parent = scrgui
 Kaiser.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
-Kaiser.Position = UDim2.new(0.1, 0, 0.73, 0)
+Kaiser.Position = UDim2.new(0.1, 0, 0.70, 0)
 Kaiser.Size = UDim2.new(0, 97, 0, 25)
 Kaiser.Font = Enum.Font.Gotham
 Kaiser.Text = "Kaiser"
@@ -493,7 +478,7 @@ end)
 DonLorenzo.Name = "Don Lorenzo"
 DonLorenzo.Parent = scrgui
 DonLorenzo.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
-DonLorenzo.Position = UDim2.new(0.1, 0, 0.76, 0)
+DonLorenzo.Position = UDim2.new(0.1, 0, 0.73, 0)
 DonLorenzo.Size = UDim2.new(0, 97, 0, 25)
 DonLorenzo.Font = Enum.Font.Gotham
 DonLorenzo.Text = "Don Lorenzo"
@@ -503,4 +488,19 @@ DonLorenzo.TextSize = 14.000
 DonLorenzo.TextWrapped = true
 DonLorenzo.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.PlayerStats.Style.Value = "Don Lorenzo"
+end)
+
+Rin.Name = "NRin"
+Rin.Parent = scrgui
+Rin.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Rin.Position = UDim2.new(0.1, 0, 0.76, 0)
+Rin.Size = UDim2.new(0, 97, 0, 25)
+Rin.Font = Enum.Font.Gotham
+Rin.Text = "NEL Rin"
+Rin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rin.TextScaled = true
+Rin.TextSize = 14.000
+Rin.TextWrapped = true
+Rin.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "NEL Rin"
 end)
