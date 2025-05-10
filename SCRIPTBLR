@@ -1,0 +1,506 @@
+local plr = game.Players.LocalPlayer
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local uicorn = Instance.new("UICorner")
+local stylchan = Instance.new("TextLabel")
+local opclbtn = Instance.new("ImageButton")
+local uicorn2 = Instance.new("UICorner")
+
+
+local Rare = Instance.new("TextLabel")
+local RareI = Instance.new("ImageLabel")
+local Epic = Instance.new("TextLabel")
+local EpicI = Instance.new("ImageLabel")
+local Legendary = Instance.new("TextLabel")
+local LegendaryI = Instance.new("ImageLabel")
+local Mythic = Instance.new("TextLabel")
+local MythicI = Instance.new("ImageLabel")
+local WorldClass = Instance.new("TextLabel")
+local WorldClassI = Instance.new("ImageLabel")
+
+local Isagi = Instance.new("TextButton")
+local Chigiri = Instance.new("TextButton")
+
+local Kurona = Instance.new("TextButton")
+local Igaguri = Instance.new("TextButton")
+local Hiori = Instance.new("TextButton")
+local Gagamaru = Instance.new("TextButton")
+local Otoya = Instance.new("TextButton")
+local Bachira = Instance.new("TextButton")
+
+local Nagi = Instance.new("TextButton")
+local Karasu = Instance.new("TextButton")
+
+local Shidou = Instance.new("TextButton")
+local Yukimiya = Instance.new("TextButton")
+local NEL = Instance.new("TextButton")
+local King = Instance.new("TextButton")
+local Kunigami = Instance.new("TextButton")
+local Aiku = Instance.new("TextButton")
+local Rin = Instance.new("TextButton")
+
+local Sae = Instance.new("TextButton")
+local NELIS = Instance.new("TextButton")
+local Kaiser = Instance.new("TextButton")
+local DonLorenzo = Instance.new("TextButton")
+
+local scrgui = Instance.new("ScrollingFrame")
+scrgui.CanvasSize = UDim2.new(0, 0, 4, 0)
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.Name = "BLGui"
+
+opclbtn.Parent = ScreenGui
+opclbtn.Position = UDim2.new(0.50, 0, 0.10, 0)
+opclbtn.Size = UDim2.new(0, 50, 0, 50)
+opclbtn.Active = true
+opclbtn.Draggable = true
+opclbtn.Image = "rbxassetid://108417470927317"
+uicorn2.Parent = opclbtn
+opclbtn.MouseButton1Click:connect(function()
+    Frame.Visible = not Frame.Visible   
+end)
+	
+Frame.Parent = ScreenGui
+Frame.BackgroundTransparency = 0.3
+Frame.BackgroundColor3 = Color3.fromRGB(92, 94, 84)
+Frame.Position = UDim2.new(0.15, 0, 0.14, 0)
+Frame.Size = UDim2.new(0, 386, 0, 300)
+Frame.Active = true
+Frame.Draggable = true
+uicorn.Parent = Frame
+
+scrgui.Parent = Frame
+scrgui.BackgroundTransparency = 0.3
+scrgui.BackgroundColor3 = Color3.fromRGB(92, 94, 84)
+scrgui.Position = UDim2.new(0.05, 0, 0.14, 0)
+scrgui.Size = UDim2.new(0, 350, 0, 250)
+scrgui.Active = true
+
+stylchan.Name = "RARE"
+stylchan.Parent = Frame
+stylchan.BackgroundTransparency = 0.1
+stylchan.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+stylchan.Position = UDim2.new(0.3, 0, 0.001, 0)
+stylchan.Size = UDim2.new(0, 150, 0, 40)
+stylchan.Font = Enum.Font.Gotham
+stylchan.Text = "STYLE CHANGER (need Reo to use)"
+stylchan.ZIndex = 2
+stylchan.TextColor3 = Color3.fromRGB(0, 0, 0)
+stylchan.TextScaled = true
+stylchan.TextSize = 14.000
+stylchan.TextWrapped = true
+
+Rare.Name = "RARE"
+Rare.Parent = scrgui
+Rare.BackgroundTransparency = 1
+Rare.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+Rare.Position = UDim2.new(0.05, 0, 0.01, 0)
+Rare.Size = UDim2.new(0, 97, 0, 25)
+Rare.Font = Enum.Font.Gotham
+Rare.Text = "RARE"
+Rare.ZIndex = 2
+Rare.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rare.TextScaled = true
+Rare.TextSize = 14.000
+Rare.TextWrapped = true
+RareI.Name = "RareI"
+RareI.Parent = scrgui
+RareI.Position = UDim2.new(0.05, 0, 0.01, 0)
+RareI.Size = UDim2.new(0, 97, 0, 25)
+RareI.Image = "rbxassetid://119110849320130"
+
+Isagi.Name = "Isagi"
+Isagi.Parent = scrgui
+Isagi.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Isagi.Position = UDim2.new(0.1, 0, 0.04, 0)
+Isagi.Size = UDim2.new(0, 97, 0, 25)
+Isagi.Font = Enum.Font.Gotham
+Isagi.Text = "Isagi"
+Isagi.TextColor3 = Color3.fromRGB(0, 0, 0)
+Isagi.TextScaled = true
+Isagi.TextSize = 14.000
+Isagi.TextWrapped = true
+Isagi.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Isagi"
+end)
+
+Chigiri.Name = "Chigiri"
+Chigiri.Parent = scrgui
+Chigiri.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Chigiri.Position = UDim2.new(0.1, 0, 0.07, 0)
+Chigiri.Size = UDim2.new(0, 97, 0, 25)
+Chigiri.Font = Enum.Font.Gotham
+Chigiri.Text = "Chigiri"
+Chigiri.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chigiri.TextScaled = true
+Chigiri.TextSize = 14.000
+Chigiri.TextWrapped = true
+Chigiri.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Chigiri"
+end)
+
+Epic.Name = "EPIC"
+Epic.Parent = scrgui
+Epic.BackgroundTransparency = 1
+Epic.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+Epic.Position = UDim2.new(0.05, 0, 0.1, 0)
+Epic.Size = UDim2.new(0, 97, 0, 25)
+Epic.Font = Enum.Font.Gotham
+Epic.Text = "EPIC"
+Epic.ZIndex = 2
+Epic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Epic.TextScaled = true
+Epic.TextSize = 14.000
+Epic.TextWrapped = true
+EpicI.Name = "EpicI"
+EpicI.Parent = scrgui
+EpicI.Position = UDim2.new(0.05, 0, 0.1, 0)
+EpicI.Size = UDim2.new(0, 97, 0, 25)
+EpicI.Image = "rbxassetid://100993557368832"
+
+Kurona.Name = "Kurona"
+Kurona.Parent = scrgui
+Kurona.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Kurona.Position = UDim2.new(0.1, 0, 0.13, 0)
+Kurona.Size = UDim2.new(0, 97, 0, 25)
+Kurona.Font = Enum.Font.Gotham
+Kurona.Text = "Kurona"
+Kurona.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kurona.TextScaled = true
+Kurona.TextSize = 14.000
+Kurona.TextWrapped = true
+Kurona.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Kurona"
+end)
+
+Igaguri.Name = "Igaguri"
+Igaguri.Parent = scrgui
+Igaguri.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Igaguri.Position = UDim2.new(0.1, 0, 0.16, 0)
+Igaguri.Size = UDim2.new(0, 97, 0, 25)
+Igaguri.Font = Enum.Font.Gotham
+Igaguri.Text = "Igaguri"
+Igaguri.TextColor3 = Color3.fromRGB(0, 0, 0)
+Igaguri.TextScaled = true
+Igaguri.TextSize = 14.000
+Igaguri.TextWrapped = true
+Igaguri.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Igaguri"
+end)
+
+Hiori.Name = "Hiori"
+Hiori.Parent = scrgui
+Hiori.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Hiori.Position = UDim2.new(0.1, 0, 0.19, 0)
+Hiori.Size = UDim2.new(0, 97, 0, 25)
+Hiori.Font = Enum.Font.Gotham
+Hiori.Text = "Hiori"
+Hiori.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hiori.TextScaled = true
+Hiori.TextSize = 14.000
+Hiori.TextWrapped = true
+Hiori.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Hiori"
+end)
+
+Gagamaru.Name = "Gagamaru"
+Gagamaru.Parent = scrgui
+Gagamaru.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Gagamaru.Position = UDim2.new(0.1, 0, 0.22, 0)
+Gagamaru.Size = UDim2.new(0, 97, 0, 25)
+Gagamaru.Font = Enum.Font.Gotham
+Gagamaru.Text = "Gagamaru"
+Gagamaru.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gagamaru.TextScaled = true
+Gagamaru.TextSize = 14.000
+Gagamaru.TextWrapped = true
+Gagamaru.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Gagamaru"
+end)
+
+Otoya.Name = "Otoya"
+Otoya.Parent = scrgui
+Otoya.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Otoya.Position = UDim2.new(0.1, 0, 0.25, 0)
+Otoya.Size = UDim2.new(0, 97, 0, 25)
+Otoya.Font = Enum.Font.Gotham
+Otoya.Text = "Otoya"
+Otoya.TextColor3 = Color3.fromRGB(0, 0, 0)
+Otoya.TextScaled = true
+Otoya.TextSize = 14.000
+Otoya.TextWrapped = true
+Otoya.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Otoya"
+end)
+
+Bachira.Name = "Bachira"
+Bachira.Parent = scrgui
+Bachira.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Bachira.Position = UDim2.new(0.1, 0, 0.28, 0)
+Bachira.Size = UDim2.new(0, 97, 0, 25)
+Bachira.Font = Enum.Font.Gotham
+Bachira.Text = "Bachira"
+Bachira.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bachira.TextScaled = true
+Bachira.TextSize = 14.000
+Bachira.TextWrapped = true
+Bachira.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Bachira"
+end)
+
+Legendary.Name = "LEGENDARY"
+Legendary.Parent = scrgui
+Legendary.BackgroundTransparency = 1
+Legendary.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+Legendary.Position = UDim2.new(0.05, 0, 0.31, 0)
+Legendary.Size = UDim2.new(0, 97, 0, 25)
+Legendary.Font = Enum.Font.Gotham
+Legendary.Text = "LEGENDARY"
+Legendary.ZIndex = 2
+Legendary.TextColor3 = Color3.fromRGB(255, 255, 255)
+Legendary.TextScaled = true
+Legendary.TextSize = 14.000
+Legendary.TextWrapped = true
+LegendaryI.Name = "LegendaryI"
+LegendaryI.Parent = scrgui
+LegendaryI.Position = UDim2.new(0.05, 0, 0.31, 0)
+LegendaryI.Size = UDim2.new(0, 97, 0, 25)
+LegendaryI.Image = "rbxassetid://129207016857060"
+
+Nagi.Name = "Nagi"
+Nagi.Parent = scrgui
+Nagi.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Nagi.Position = UDim2.new(0.1, 0, 0.34, 0)
+Nagi.Size = UDim2.new(0, 97, 0, 25)
+Nagi.Font = Enum.Font.Gotham
+Nagi.Text = "Nagi"
+Nagi.TextColor3 = Color3.fromRGB(0, 0, 0)
+Nagi.TextScaled = true
+Nagi.TextSize = 14.000
+Nagi.TextWrapped = true
+Nagi.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Nagi"
+end)
+
+Karasu.Name = "Karasu"
+Karasu.Parent = scrgui
+Karasu.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Karasu.Position = UDim2.new(0.1, 0, 0.37, 0)
+Karasu.Size = UDim2.new(0, 97, 0, 25)
+Karasu.Font = Enum.Font.Gotham
+Karasu.Text = "Karasu"
+Karasu.TextColor3 = Color3.fromRGB(0, 0, 0)
+Karasu.TextScaled = true
+Karasu.TextSize = 14.000
+Karasu.TextWrapped = true
+Karasu.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Karasu"
+end)
+
+Mythic.Name = "MYTHIC"
+Mythic.Parent = scrgui
+Mythic.BackgroundTransparency = 1
+Mythic.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+Mythic.Position = UDim2.new(0.05, 0, 0.4, 0)
+Mythic.Size = UDim2.new(0, 97, 0, 25)
+Mythic.Font = Enum.Font.Gotham
+Mythic.Text = "MYTHIC"
+Mythic.ZIndex = 2
+Mythic.TextColor3 = Color3.fromRGB(255, 255, 255)
+Mythic.TextScaled = true
+Mythic.TextSize = 14.000
+Mythic.TextWrapped = true
+MythicI.Name = "MythicI"
+MythicI.Parent = scrgui
+MythicI.Position = UDim2.new(0.05, 0, 0.4, 0)
+MythicI.Size = UDim2.new(0, 97, 0, 25)
+MythicI.Image = "rbxassetid://129207016857060"
+MythicI.ImageColor3 = Color3.fromRGB(255, 6, 6)
+
+Shidou.Name = "Shidou"
+Shidou.Parent = scrgui
+Shidou.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Shidou.Position = UDim2.new(0.1, 0, 0.43, 0)
+Shidou.Size = UDim2.new(0, 97, 0, 25)
+Shidou.Font = Enum.Font.Gotham
+Shidou.Text = "Shidou"
+Shidou.TextColor3 = Color3.fromRGB(0, 0, 0)
+Shidou.TextScaled = true
+Shidou.TextSize = 14.000
+Shidou.TextWrapped = true
+Shidou.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Shidou"
+end)
+
+Yukimiya.Name = "Yukimiya"
+Yukimiya.Parent = scrgui
+Yukimiya.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Yukimiya.Position = UDim2.new(0.1, 0, 0.46, 0)
+Yukimiya.Size = UDim2.new(0, 97, 0, 25)
+Yukimiya.Font = Enum.Font.Gotham
+Yukimiya.Text = "Yukimiya"
+Yukimiya.TextColor3 = Color3.fromRGB(0, 0, 0)
+Yukimiya.TextScaled = true
+Yukimiya.TextSize = 14.000
+Yukimiya.TextWrapped = true
+Yukimiya.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Yukimiya"
+end)
+
+NEL.Name = "NEL Bachira"
+NEL.Parent = scrgui
+NEL.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+NEL.Position = UDim2.new(0.1, 0, 0.49, 0)
+NEL.Size = UDim2.new(0, 97, 0, 25)
+NEL.Font = Enum.Font.Gotham
+NEL.Text = "NEL Bachira"
+NEL.TextColor3 = Color3.fromRGB(0, 0, 0)
+NEL.TextScaled = true
+NEL.TextSize = 14.000
+NEL.TextWrapped = true
+NEL.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "NEL Bachira"
+end)
+
+King.Name = "King"
+King.Parent = scrgui
+King.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+King.Position = UDim2.new(0.1, 0, 0.52, 0)
+King.Size = UDim2.new(0, 97, 0, 25)
+King.Font = Enum.Font.Gotham
+King.Text = "King"
+King.TextColor3 = Color3.fromRGB(0, 0, 0)
+King.TextScaled = true
+King.TextSize = 14.000
+King.TextWrapped = true
+King.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "King"
+end)
+
+Kunigami.Name = "Kunigami"
+Kunigami.Parent = scrgui
+Kunigami.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Kunigami.Position = UDim2.new(0.1, 0, 0.55, 0)
+Kunigami.Size = UDim2.new(0, 97, 0, 25)
+Kunigami.Font = Enum.Font.Gotham
+Kunigami.Text = "Kunigami"
+Kunigami.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kunigami.TextScaled = true
+Kunigami.TextSize = 14.000
+Kunigami.TextWrapped = true
+Kunigami.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Kunigami"
+end)
+
+Aiku.Name = "Aiku"
+Aiku.Parent = scrgui
+Aiku.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Aiku.Position = UDim2.new(0.1, 0, 0.58, 0)
+Aiku.Size = UDim2.new(0, 97, 0, 25)
+Aiku.Font = Enum.Font.Gotham
+Aiku.Text = "Aiku"
+Aiku.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aiku.TextScaled = true
+Aiku.TextSize = 14.000
+Aiku.TextWrapped = true
+Aiku.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Aiku"
+end)
+
+Rin.Name = "Rin"
+Rin.Parent = scrgui
+Rin.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Rin.Position = UDim2.new(0.1, 0, 0.61, 0)
+Rin.Size = UDim2.new(0, 97, 0, 25)
+Rin.Font = Enum.Font.Gotham
+Rin.Text = "Rin"
+Rin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rin.TextScaled = true
+Rin.TextSize = 14.000
+Rin.TextWrapped = true
+Rin.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Rin"
+end)
+
+WorldClass.Name = "WORLD CLASS"
+WorldClass.Parent = scrgui
+WorldClass.BackgroundTransparency = 1
+WorldClass.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+WorldClass.Position = UDim2.new(0.05, 0, 0.64, 0)
+WorldClass.Size = UDim2.new(0, 97, 0, 25)
+WorldClass.Font = Enum.Font.Gotham
+WorldClass.Text = "WORLD CLASS"
+WorldClass.ZIndex = 2
+WorldClass.TextColor3 = Color3.fromRGB(255, 255, 255)
+WorldClass.TextScaled = true
+WorldClass.TextSize = 14.000
+WorldClass.TextWrapped = true
+WorldClassI.Name = "MythicI"
+WorldClassI.Parent = scrgui
+WorldClassI.Position = UDim2.new(0.05, 0, 0.64, 0)
+WorldClassI.Size = UDim2.new(0, 97, 0, 25)
+WorldClassI.Image = "rbxassetid://139736919389363"
+WorldClassI.ImageColor3 = Color3.fromRGB(255, 255, 255)
+
+Sae.Name = "Sae"
+Sae.Parent = scrgui
+Sae.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Sae.Position = UDim2.new(0.1, 0, 0.67, 0)
+Sae.Size = UDim2.new(0, 97, 0, 25)
+Sae.Font = Enum.Font.Gotham
+Sae.Text = "Sae"
+Sae.TextColor3 = Color3.fromRGB(0, 0, 0)
+Sae.TextScaled = true
+Sae.TextSize = 14.000
+Sae.TextWrapped = true
+Sae.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Sae"
+end)
+
+NELIS.Name = "NEL ISAGI"
+NELIS.Parent = scrgui
+NELIS.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+NELIS.Position = UDim2.new(0.1, 0, 0.70, 0)
+NELIS.Size = UDim2.new(0, 97, 0, 25)
+NELIS.Font = Enum.Font.Gotham
+NELIS.Text = "NEL Isagi"
+NELIS.TextColor3 = Color3.fromRGB(0, 0, 0)
+NELIS.TextScaled = true
+NELIS.TextSize = 14.000
+NELIS.TextWrapped = true
+NELIS.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "NEL Isagi"
+end)
+
+Kaiser.Name = "Kaiser"
+Kaiser.Parent = scrgui
+Kaiser.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+Kaiser.Position = UDim2.new(0.1, 0, 0.73, 0)
+Kaiser.Size = UDim2.new(0, 97, 0, 25)
+Kaiser.Font = Enum.Font.Gotham
+Kaiser.Text = "Kaiser"
+Kaiser.TextColor3 = Color3.fromRGB(0, 0, 0)
+Kaiser.TextScaled = true
+Kaiser.TextSize = 14.000
+Kaiser.TextWrapped = true
+Kaiser.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Kaiser"
+end)
+
+DonLorenzo.Name = "Don Lorenzo"
+DonLorenzo.Parent = scrgui
+DonLorenzo.BackgroundColor3 = Color3.fromRGB(124, 94, 149)
+DonLorenzo.Position = UDim2.new(0.1, 0, 0.76, 0)
+DonLorenzo.Size = UDim2.new(0, 97, 0, 25)
+DonLorenzo.Font = Enum.Font.Gotham
+DonLorenzo.Text = "Don Lorenzo"
+DonLorenzo.TextColor3 = Color3.fromRGB(0, 0, 0)
+DonLorenzo.TextScaled = true
+DonLorenzo.TextSize = 14.000
+DonLorenzo.TextWrapped = true
+DonLorenzo.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.PlayerStats.Style.Value = "Don Lorenzo"
+end)
